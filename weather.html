@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Weather Page">
+        <meta name="author" content="João Aguiar">
+ 		<meta name="keywords" content="Weather">
+  		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="shortcut icon" type="image/png" href="assets/favicon.png">
+        <link rel="stylesheet" href="assets/styleWeather.css">
+
+        <!-- Amaranth -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Amaranth&display=swap" rel="stylesheet">
+
+        <!-- Open Sans -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+
+        <title>Weather Page</title>
+	</head>
+    <body>
+        <div class="sol">
+            <div id="stars">
+                <div class="container">
+                    <div class="loader">
+                        <div class="line left"></div>
+                        <div class="ball"></div>
+                        <div class="line right"></div>
+                    </div>
+                    
+                    <div class="content">
+                        <div id="weather_content">
+                            <div class="card">
+                                <ul class="cities">
+                                </ul>
+                            </div>
+                        </div>    
+
+                        <div class="container_cities">
+                            <h1>Other places with similar weather condictions:</h1>
+
+                            <div class="container_other_cities">
+                                <ul class="other_cities">
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="info_city">
+                            <h1>More info:</h1>
+
+                            <div class="info">
+                            </div>
+
+                            <div id="map"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="assets/starsJS.js"></script>
+        <script type="text/javascript" src="assets/obtainJS.js"></script>
+        <script type="text/javascript" src="assets/loaderJS.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCzqxVBb2PJPQUFQGZihL-k64RqxOFh7A0&callback=initMap&libraries=&v=weekly&channel=2" async></script>
+    </body>
+</html>

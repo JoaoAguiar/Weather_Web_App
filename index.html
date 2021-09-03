@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Weather Page">
+        <meta name="author" content="João Aguiar">
+ 		<meta name="keywords" content="Weather">
+  		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="shortcut icon" type="image/png" href="assets/favicon.png">
+        <link rel="stylesheet" href="assets/style.css">
+
+        <!-- Merriweather -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap" rel="stylesheet">
+
+        <title>Weather Page</title>
+	</head>
+    <body>
+        <div class="sol">
+            <div class="planet earth"></div>
+            <div id="stars">
+                <div class="container">
+                    <h1>Chose the City!</h1>
+                    <h6>after chosing the city pass over earth</h6>
+
+                    <form action="weather.html" method="POST">
+                        <input type="text" id="result" placeholder="Write here the city" autofocus required></input>
+                        <input id="button" type="submit" value="Click Me!" onclick="handleSubmit()"></input>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="assets/starsJS.js"></script>
+        <script type="text/javascript" src="assets/sendJS.js"></script>
+    </body>
+</html>
