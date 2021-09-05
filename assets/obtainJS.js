@@ -54,6 +54,8 @@ window.addEventListener('load', (e) => {
     e.preventDefault();
 
     const input = sessionStorage.getItem('RESULT');
+    //const input = window.location.search.substring(6, window.location.search.length);
+    
     name_ = input;
 
     for(let index=0; index<allCities.length; index++) {
